@@ -37,3 +37,6 @@ resource "aws_instance" "web1" {
     Name = "web1"
   }
 }
+output "instance_ips" {
+  value = aws_instance.web1.public_ip
+}
