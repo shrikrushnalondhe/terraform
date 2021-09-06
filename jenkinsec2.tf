@@ -1,8 +1,3 @@
-provider "aws" {
-  region     = "ap-south-1"
-  access_key = "AKIA44HR3L3TJFXYAY6Z"
-  secret_key = "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"
-}
 resource "aws_security_group" "ec2-sg" {
   name = "ec2-sg"
   ingress {
