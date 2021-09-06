@@ -1,3 +1,6 @@
+provider "aws" {
+  region     = "ap-south-1"
+ }
 resource "aws_security_group" "ec2-sg" {
   name = "ec2-sg"
   ingress {
