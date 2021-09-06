@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "ap-south-1"
-  access_key = "AKIA44HR3L3THPV6L742"
-  secret_key = "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"
+  access_key = "AKIA44HR3L3TBHGVDKLN"
+  secret_key = "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"
 }
 resource "aws_security_group" "ec2-sg" {
   name = "ec2-sg"
