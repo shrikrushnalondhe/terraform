@@ -30,7 +30,7 @@ resource "aws_security_group" "ec2-sg" {
 }
 
 resource "aws_instance" "javaapp" {
-  ami = "ami-04db49c0fb2215364"
+  ami = "ami-087c17d1fe0178315"
   instance_type = "t2.micro"
   security_groups = [aws_security_group.ec2-sg.name]
   tags = {
