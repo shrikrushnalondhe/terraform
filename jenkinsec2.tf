@@ -32,6 +32,7 @@ resource "aws_security_group" "ec2-sg" {
 resource "aws_instance" "javaapp" {
   ami = "ami-087c17d1fe0178315"
   instance_type = "t2.micro"
+  key_name= "aws_key"
   security_groups = [aws_security_group.ec2-sg.name]
   tags = {
     Name = "javaapp"
