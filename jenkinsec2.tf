@@ -33,7 +33,7 @@ resource "aws_instance" "tomcat" {
   ami = "ami-087c17d1fe0178315"
   instance_type = "t2.micro"
   key_name= "aws_key"
-  security_groups = [aws_security_group.ec2-sgmew.name]
+  security_groups = [aws_security_group.ec2-sgnew.name]
   tags = {
     Name = "tomcat"
   }
